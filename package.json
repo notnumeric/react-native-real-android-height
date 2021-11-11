@@ -1,0 +1,28 @@
+{
+  "name": "react-native-android-real-height",
+  "version": "1.0.0",
+  "description": "For getting android visible area height.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/notnumeric/react-native-real-android-height"
+  },
+  "files": [
+    "android",
+    "index",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "react-native",
+    "react",
+    "android"
+  ],
+  "rnpm": {
+    "android": {
+      "packageInstance": "new RNAndroidRealHeightPackage()"
+    }
+  },
+  "author": "Veysel Okut <veokut@gmail.com>",
+  "license": "ISC"
+}
