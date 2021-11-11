@@ -3,10 +3,7 @@
   "version": "1.0.0",
   "description": "For getting android visible area height.",
   "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/notnumeric/react-native-real-android-height"
-  },
+  "repository": "https://github.com/notnumeric/react-native-real-android-height",
   "files": [
     "android",
     "index",
