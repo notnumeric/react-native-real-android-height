@@ -133,9 +133,16 @@ public class RNAndroidRealHeightModule extends ReactContextBaseJavaModule implem
     Point nsize = getNavigationBarSize(getReactApplicationContext());
     float nav_bar = nsize.y / displayMetrics.density;
 
-    float height = displayMetrics.heightPixels / displayMetrics.density;
+    float height = h / displayMetrics.density;
     float real_height = rh / displayMetrics.density;
-    float hh = real_height - nav_bar;
+    float diff = real_height - height;
+
+    float hh = (height + status_bar) - nav_bar;
+    if (diff == 48) {
+      hh = real_height - nav_bar - status_bar;
+    } else {
+      hh = real_height - nav_bar;
+    }
 
     return hh;
   }
