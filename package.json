@@ -1,6 +1,6 @@
 {
   "name": "react-native-android-real-height",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "For getting android visible area height.",
   "main": "index.js",
   "repository": "https://github.com/notnumeric/react-native-real-android-height",
