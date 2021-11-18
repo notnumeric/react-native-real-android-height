@@ -137,8 +137,10 @@ public class RNAndroidRealHeightModule extends ReactContextBaseJavaModule implem
     float real_height = rh / displayMetrics.density;
     float diff = real_height - height;
 
-    float hh = (height + status_bar) - nav_bar;
+    float hh;
     if (diff == 48) {
+      hh = real_height - nav_bar - status_bar;
+    } else if (diff == 0) {
       hh = real_height - nav_bar - status_bar;
     } else {
       hh = real_height - nav_bar;
