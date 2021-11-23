@@ -8,6 +8,7 @@ import android.content.Context;
 import android.graphics.Point;
 import android.os.Build;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.Display;
 import android.provider.Settings;
 import android.content.res.Resources;
@@ -135,7 +136,7 @@ public class RNAndroidRealHeightModule extends ReactContextBaseJavaModule implem
 
     float height = h / displayMetrics.density;
     float real_height = rh / displayMetrics.density;
-    float diff = real_height - height;
+    int diff = (int) (real_height - height);
 
     float hh;
     if (diff == 48) {
